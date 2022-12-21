@@ -1,0 +1,16 @@
+@use "../styles/abstracts/_index.scss" as *;
+
+.navigation {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  @include media-query-max(800px) {
+    font-size: 12px;
+  }
+  .navigation-item {
+    text-decoration: none;
+    font-weight: 500;
+  }
+}

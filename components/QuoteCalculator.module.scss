@@ -1,0 +1,89 @@
+@use "../styles/abstracts/_index.scss" as *;
+
+.quote-calculator {
+  height: $section-height;
+  background-color: $bokara-gray;
+  padding: 64px;
+  display: flex;
+
+  @include media-query-max(800px) {
+    padding: 0;
+  }
+  @include media-query-max(800px) {
+    padding: 0;
+  }
+  .inner-container {
+    background-color: $vista-white;
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 64px;
+    gap: 48px;
+
+    @include media-query-max(1000px) {
+      grid-template-rows: 1fr 5fr;
+      grid-template-columns: unset;
+    }
+
+    @include media-query-max(800px) {
+      flex-direction: column;
+      padding: 48px;
+    }
+
+    @include media-query-max(800px) {
+      flex-direction: column;
+      padding: 32px;
+      gap: 24px;
+      padding-top: 112px;
+    }
+
+    @include media-query-max(600px) {
+      padding-top: 90px;
+    }
+    @include media-query-max(500px) {
+      padding-top: 64px;
+    }
+
+    .left {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      // flex: 1;
+
+      .quote-instructions {
+        padding: 0;
+        line-height: 1.2;
+        color: $giants-orange;
+        font-size: 64px;
+        font-weight: 300;
+        margin: 0;
+
+        @include media-query-max(800px) {
+          // font-size: 32px;
+          line-height: 1.4;
+        }
+
+        @include media-query-max(700px) {
+          font-size: 48px;
+          // line-height: 1.4;
+          line-height: 1.1;
+        }
+        @include media-query-max(400px) {
+          font-size: 32px;
+          // line-height: 1.4;
+          line-height: 1.1;
+        }
+      }
+
+      .quote-instructions-details {
+        color: #000;
+      }
+    }
+    .right {
+      flex: 1;
+      display: flex;
+      // background-color: red;
+      min-height: fit-content;
+    }
+  }
+}

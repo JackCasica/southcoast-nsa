@@ -1,0 +1,45 @@
+@use "../styles/abstracts/_index.scss" as *;
+
+.map {
+  position: relative;
+  height: calc($section-height);
+  width: 100vw;
+
+  .about {
+    padding: 64px;
+    font-weight: 400;
+    font-size: 48px;
+    color: $giants-orange;
+  }
+}
+.map-background-container {
+  // min-height: $section-height;
+  position: absolute;
+  border: 0;
+  width: 100vw;
+  height: 100%;
+  filter: brightness(0.5);
+  z-index: -10;
+
+  @include media-query-max(800px) {
+    height: 60%;
+    bottom: 0;
+  }
+
+  .map-background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+
+  .marker {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    height: 30px;
+    aspect-ratio: 1;
+    z-index: 10;
+  }
+}

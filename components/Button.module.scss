@@ -1,0 +1,16 @@
+@use "../styles/abstracts/_index.scss" as *;
+
+.button {
+  background-color: $giants-orange;
+  color: white;
+  padding: 12px 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  border: none;
+  // letter-spacing: 0.8px;
+
+  &:hover {
+    background-color: rgba($giants-orange, 0.7);
+  }
+}

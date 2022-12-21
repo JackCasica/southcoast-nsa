@@ -1,0 +1,79 @@
+@use "../styles/abstracts/_index.scss" as *;
+
+.services {
+  background-color: $bokara-gray;
+  min-height: $section-height;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px;
+  color: white;
+
+  @include media-query-max(400px) {
+    padding: 24px;
+  }
+
+  .section-title {
+    font-size: 64px;
+    // margin: 48px;
+    @include media-query-max(400px) {
+      font-size: 48px;
+      margin: 24px;
+    }
+  }
+
+  .columns-container {
+    display: flex;
+    gap: 90px;
+    // max-width: 80vw;
+
+    @include media-query-max(1100px) {
+      // flex-direction: column;
+      gap: 32px;
+    }
+
+    @include media-query-max(800px) {
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    .column {
+      // width: 24vw;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+
+      @include media-query-max(800px) {
+        width: 90vw;
+      }
+
+      .column-title {
+        font-size: 32px;
+        padding: 24px;
+        color: $giants-orange;
+        text-align: center;
+        white-space: nowrap;
+
+        @include media-query-max(1000px) {
+          font-size: 32px;
+        }
+        @include media-query-max(800px) {
+          font-size: 32px;
+        }
+      }
+
+      .description {
+        text-align: center;
+        // min-height: 150px;
+        margin-bottom: 32px;
+      }
+
+      .list-container {
+        // background-color: pink;
+        display: flex;
+        justify-content: center;
+        // max-width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,120 @@
+@use "../styles/abstracts/_index.scss" as *;
+
+.hero {
+  width: 100%;
+  height: $section-height;
+  position: relative;
+
+  .hero-content {
+    position: absolute;
+    z-index: 1;
+    top: 53%;
+    left: 64px;
+    right: 64px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+
+    @include media-query-max(400px) {
+      top: 50%;
+      left: 24px;
+      right: 24px;
+    }
+
+    .hero-text {
+      font-size: 160px;
+      line-height: 1;
+      // font-weight: 400;
+
+      @include media-query-max(1300px) {
+        font-size: 140px;
+      }
+      @include media-query-max(1100px) {
+        font-size: 120px;
+      }
+      @include media-query-max(1000px) {
+        font-size: 96px;
+        // text-align: center;
+      }
+      @include media-query-max(800px) {
+        font-size: 72px;
+      }
+      @include media-query-max(600px) {
+        font-size: 56px;
+        align-self: center;
+      }
+
+      @include media-query-max(480px) {
+        font-size: 48px;
+      }
+      @include media-query-max(350px) {
+        font-size: 32px;
+      }
+    }
+    .learn-more {
+      font-size: 32px;
+      font-weight: bold;
+      align-self: center;
+      width: fit-content;
+      color: white;
+      padding: 12px 24px;
+      background-color: $giants-orange;
+
+      @include media-query-max(1100px) {
+        align-self: unset;
+      }
+
+      @include media-query-max(600px) {
+        font-size: 16px;
+        align-self: center;
+      }
+    }
+
+    .chevron {
+      height: 100px;
+      color: white;
+    }
+  }
+
+  .hero-video-background {
+    height: 100%;
+    width: 100%;
+    opacity: 50%;
+    object-fit: cover;
+  }
+
+  // .hero-right {
+  //   height: 100vh;
+
+  //   .stack {
+  //     position: relative;
+  //     grid-template-rows: repeat(4, 1fr);
+
+  //     .docs {
+  //       width: 100%;
+  //     }
+
+  //     .first {
+  //       position: absolute;
+  //       top: 0;
+  //       z-index: -1;
+  //     }
+  //     .second {
+  //       position: absolute;
+  //       top: 200px;
+  //       z-index: -2;
+  //     }
+  //     .third {
+  //       position: absolute;
+  //       top: 400px;
+  //       z-index: -3;
+  //     }
+  //     .fourth {
+  //       position: absolute;
+  //       top: 600px;
+  //       z-index: -4;
+  //     }
+  //   }
+  // }
+}

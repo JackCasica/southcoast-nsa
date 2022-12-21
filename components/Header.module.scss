@@ -1,0 +1,35 @@
+.header {
+  position: sticky;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: #2a2829;
+  padding: 16px;
+  align-items: center;
+  z-index: 10000;
+  top: 0;
+
+  .left {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    .company-name {
+      font-size: 24px;
+    }
+  }
+  .right {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+
+    .menu {
+      stroke: white;
+    }
+  }
+}
+
+.fixed {
+  position: fixed;
+}
