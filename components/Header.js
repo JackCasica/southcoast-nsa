@@ -14,7 +14,7 @@ export const Header = ({}) => {
   const headerRef = useRef();
 
   useEffect(() => {
-    window.addEventListener("resize", (event) => {
+    window.addEventListener("load", (event) => {
       setWindowWidth(window.innerWidth);
     });
   }, []);
