@@ -18,6 +18,11 @@ export const Header = ({}) => {
       setWindowWidth(window.innerWidth);
     });
   }, []);
+  useEffect(() => {
+    window.addEventListener("resize", (event) => {
+      setWindowWidth(window.innerWidth);
+    });
+  }, []);
 
   return (
     <div
