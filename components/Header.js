@@ -35,7 +35,7 @@ export const Header = ({}) => {
           className={`${styles["logo"]}`}
           alt="SouthCoast NSA"
           height={40}
-          // width={32}
+          // width={32
         />
         {/* <span className={`${styles["company-name"]}`}>SouthCoast NSA</span> */}
       </div>

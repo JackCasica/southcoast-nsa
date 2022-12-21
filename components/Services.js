@@ -3,7 +3,10 @@ import { notarialActsDescription, residentialDescription, commercialDescription,
 
 export const Services = ({}) => {
   return (
-    <div className={`${styles[`services`]}`}>
+    <div
+      className={`${styles[`services`]}`}
+      id="services"
+    >
       <h2 className={`${styles["section-title"]}`}>Services</h2>
       <div className={`${styles["columns-container"]}`}>
         <div className={`${styles["column"]} ${styles["notarial-acts"]}`}>

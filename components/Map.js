@@ -3,7 +3,10 @@ import styles from "./Map.module.scss";
 export const Map = (props) => {
   return (
     <div className={`${styles["map"]}`}>
-      <div className={`${styles["about"]}`}>
+      <div
+        className={`${styles["about"]}`}
+        id="about"
+      >
         <span>Notarizations when and where your clients need them</span>
       </div>
       <div className={`${styles["map-background-container"]}`}>
